@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..:: REKARE ::..</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #f4f7f6;
+            color: #333;
+            overflow: hidden;
+        }
+/* Normal ve tıklanmış (visited) tüm linklerin rengini sabitler */
+a, a:visited {
+    color: blue; /* Buraya kendi mavi tonunuzu yazabilirsiniz, örn: #0000FF veya #007bff */
+    text-decoration: none; /* İsteğe bağlı: Alt çizgisini kaldırmak isterseniz */
+}
+
+        /* Sol Menü (Sidebar) */
+        .sidebar {
+            width: 320px;
+            background-color: #1e293b;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #334155;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            padding: 24px 20px;
+            font-size: 1.2rem;
+            color: #38bdf8;
+            border-bottom: 1px solid #334155;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .menu-list {
+            list-style: none;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #334155;
+        }
+
+        .menu-item a {
+            display: block;
+            padding: 18px 20px;
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .menu-item a:hover, .menu-item a.active {
+            background-color: #0f172a;
+            color: #38bdf8;
+            border-left: 4px solid #38bdf8;
+            padding-left: 24px;
+        }
+
+        /* Sağ İçerik Alanı (Iframe) */
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sol Menü -->
+    <div class="sidebar"><center>
+        <h2><img src="logomuz-r2.png" width="200" height="150" border="0"> <br><a href="anasayfa.html" target="display_iframe" class="active">ANA SAYFA</a></h2></center>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="urun1.html" target="display_iframe" class="active">1. Klasik Taş Tozu Saksı</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun2.html" target="display_iframe">2. Hidroponik Saksı</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun3.html" target="display_iframe">3. Sallanan Saksı</a>
+            </li>
+
+ <li class="menu-item">
+                <a href="urun4.html" target="display_iframe" class="active">4. Kök Saksı</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun5.html" target="display_iframe">5. Duvara Asılan Saksı</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun6.html" target="display_iframe">6. Cam Tüp Saksı</a>
+            </li>
+
+ <li class="menu-item">
+                <a href="urun7.html" target="display_iframe" class="active">7. Mesleki Saksılar</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun8.html" target="display_iframe">8. İsimli Saksılar</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun9.html" target="display_iframe">9. Telli Telgraf</a>
+            </li>
+
+ <li class="menu-item">
+                <a href="urun10.html" target="display_iframe" class="active">10. Bonzai Taş Çiçek</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun11.html" target="display_iframe">11. Havai Bitkiler</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun12.html" target="display_iframe">12. Tapınak Saksı</a>
+            </li>
+
+ <li class="menu-item">
+                <a href="urun13.html" target="display_iframe" class="active">13. Şişi Odoşi Saksı</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun14.html" target="display_iframe">14. Havada duran Saksı</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun15.html" target="display_iframe">15. Büst Saksılar</a>
+            </li>
+
+ <li class="menu-item">
+                <a href="urun16.html" target="display_iframe" class="active">16. Çim Adamlar</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun17.html" target="display_iframe">17. Saksıda Meyve Fidanı</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun18.html" target="display_iframe">18. Gece parlayan Saksı</a>
+            </li>
+
+ <li class="menu-item">
+                <a href="urun19.html" target="display_iframe" class="active">19. Geri dönüşüm Saksılar</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun20.html" target="display_iframe">20. Saksı Aksesuarları</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun21.html" target="display_iframe">21. Tohum Topları</a>
+            </li>
+ 
+ <li class="menu-item">
+                <a href="urun22.html" target="display_iframe" class="active">22. Teraryumlar</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun23.html" target="display_iframe">23. Kalsiyum Gübresi</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun24.html" target="display_iframe">24. Tavşan Gübresi</a>
+            </li>
+
+ <li class="menu-item">
+                <a href="urun25.html" target="display_iframe" class="active">25. Solucan Gübresi</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun26.html" target="display_iframe">26. Uğur Böceği</a>
+            </li>
+            <li class="menu-item">
+                <a href="urun27.html" target="display_iframe">27. Şoklanmış Gül yaprakları</a>
+            </li>
+       </ul>
+    </div>
+
+    <!-- Sağ Gösterim Alanı (Iframe) -->
+    <div class="content">
+        <iframe name="display_iframe" src="anasayfa.html"></iframe>
+    </div>
+
+    <script>
+        // Aktif menü vurgusu için JavaScript
+        const links = document.querySelectorAll('.menu-item a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
